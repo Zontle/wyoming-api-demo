@@ -57,24 +57,9 @@ function Features() {
                                     </div>
                                 </a>
                                 <a
-                                    className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${tab !== 2 ? 'bg-white shadow-md border-gray-200 hover:shadow-lg' : 'bg-gray-200 border-transparent'}`}
-                                    href="#0"
-                                    onClick={(e) => { e.preventDefault(); setTab(2); }}
-                                >
-                                    <div>
-                                        <div className="font-bold leading-snug tracking-tight mb-1">Verify a registrant reputation</div>
-                                        <div className="text-gray-600">How many companies has a registrant done business with? How many of those are in good standing?</div>
-                                    </div>
-                                    <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
-                                        <svg className="w-3 h-3 fill-current" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M11.854.146a.5.5 0 00-.525-.116l-11 4a.5.5 0 00-.015.934l4.8 1.921 1.921 4.8A.5.5 0 007.5 12h.008a.5.5 0 00.462-.329l4-11a.5.5 0 00-.116-.525z" fillRule="nonzero" />
-                                        </svg>
-                                    </div>
-                                </a>
-                                <a
                                     className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${tab !== 3 ? 'bg-white shadow-md border-gray-200 hover:shadow-lg' : 'bg-gray-200 border-transparent'}`}
                                     href="#0"
-                                    onClick={(e) => { e.preventDefault(); setTab(3); }}
+                                    onClick={(e) => { e.preventDefault(); setTab(2); }}
                                 >
                                     <div>
                                         <div className="font-bold leading-snug tracking-tight mb-1">General Data Analysis</div>
@@ -125,9 +110,13 @@ function Features() {
                                     leaveStart="opacity-100 translate-y-0"
                                     leaveEnd="opacity-0 -translate-y-16"
                                 >
-                                    <div className="relative inline-flex flex-col">
-                                        <img className="md:max-w-none mx-auto rounded" src={require('../images/features-bg.png')} width="500" height="462" alt="Features bg" />
-                                        <img className="md:max-w-none absolute w-full left-0 transform animate-float" src={require('../images/features-element.png')} width="500" height="44" alt="Element" style={{ top: '30%' }} />
+                                    <div className="relative flex-row">
+                                        <iframe src="https://codesandbox.io/embed/wyoming-api-demo-pt2-fmjpr?fontsize=14&hidenavigation=1&theme=dark&view=preview"
+                                            style={{width: '100%', height:'400px', border:0, borderRadius: '4px', overflow: 'hidden'}}
+                                            title="Wyoming API Demo pt1"
+                                            allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+                                            sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+                                        ></iframe>
                                     </div>
                                 </Transition>
                                 {/* Item 3 */}
