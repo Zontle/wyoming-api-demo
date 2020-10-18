@@ -31,7 +31,7 @@ function Features() {
                     {/* Section header */}
                     <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
                         <h1 className="h2 mb-4">See the use cases</h1>
-                        <p className="text-xl text-gray-600">Although the Business Registry provides you with all the information you need, an API can quickly give you detailed date on request.</p>
+                        <p className="text-xl text-gray-600">Although the Business Registry provides you with all the information you need, an API can quickly give you detailed data on request.</p>
                     </div>
 
                     {/* Section content */}
